@@ -180,7 +180,7 @@ class App extends Component {
         }
         else {
           message = "Item " + product.name + " was shipped to the customer!"
-        }//
+        }//a
 
         // Displaying notification that the product was paid
         self.setState({
