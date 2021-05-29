@@ -172,6 +172,7 @@ class App extends Component {
           if (productIndex == element.id)
             product = element;
         });
+        //
 
         let message = "";
         if (product.state == 'Created') {
