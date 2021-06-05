@@ -81,6 +81,7 @@ class App extends Component {
         `Failed to load web3, accounts, or contract. Check console for details.`,
       );
       console.error(error);
+      //
     }
   };
 
