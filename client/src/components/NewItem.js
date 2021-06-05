@@ -78,7 +78,7 @@ class NewItem extends Component {
                         </Grid>
                     </Grid>
                 </Paper>
-                <AlertDialog show={this.state.showAlert} price={this.state.itemPrice} paymentAddress={this.state.paymentAddress} closeAlertDialog={this.toggleAlert}/>
+                <AlertDialog show={this.state.showAlert} name={this.state.itemName} price={this.state.itemPrice} paymentAddress={this.state.paymentAddress} closeAlertDialog={this.toggleAlert}/>
             </Container>
         );
     }

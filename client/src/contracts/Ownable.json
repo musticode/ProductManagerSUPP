@@ -33,15 +33,15 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"_owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/per/productmanager/contracts/Ownable.sol\":\"Ownable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/per/productmanager/contracts/Ownable.sol\":{\"keccak256\":\"0x666684e22926d025425035d01e6213166abf8e6cc338e8effde034c89a6b2b77\",\"urls\":[\"bzz-raw://d5381e892f5b1a040ebd908acdaa6905a2cede3f7386a958c4be60e280d8962c\",\"dweb:/ipfs/QmQ74gvf5VNNCsYRUUrZK2a1tQSawxNfVikPtFSkoudhqW\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.0+commit.26b70077\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"_owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isOwner\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"isOwner()\":{\"details\":\"Returns true if the caller is the current owner.\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/per/Desktop/productmanager/contracts/Ownable.sol\":\"Ownable\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/per/Desktop/productmanager/contracts/Ownable.sol\":{\"keccak256\":\"0x666684e22926d025425035d01e6213166abf8e6cc338e8effde034c89a6b2b77\",\"urls\":[\"bzz-raw://d5381e892f5b1a040ebd908acdaa6905a2cede3f7386a958c4be60e280d8962c\",\"dweb:/ipfs/QmQ74gvf5VNNCsYRUUrZK2a1tQSawxNfVikPtFSkoudhqW\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "//pragma solidity ^0.6.0;\npragma solidity ^0.6.0;\ncontract Ownable {\n\n    address public _owner;\n    constructor () internal {\n        _owner = msg.sender;\n    }\n    /**\n    * @dev Throws if called by any account other than the owner.\n    */\n    modifier onlyOwner() {\n        require(isOwner(), \"Ownable: caller is not the owner\");\n        _;\n    }\n    /**\n    * @dev Returns true if the caller is the current owner.\n    */\n    function isOwner() public view returns (bool) {\n        return (msg.sender == _owner);\n    }\n}",
-  "sourcePath": "/home/per/productmanager/contracts/Ownable.sol",
+  "sourcePath": "/home/per/Desktop/productmanager/contracts/Ownable.sol",
   "ast": {
-    "absolutePath": "/home/per/productmanager/contracts/Ownable.sol",
+    "absolutePath": "/home/per/Desktop/productmanager/contracts/Ownable.sol",
     "exportedSymbols": {
       "Ownable": [
         72
@@ -482,7 +482,7 @@
   },
   "legacyAST": {
     "attributes": {
-      "absolutePath": "/home/per/productmanager/contracts/Ownable.sol",
+      "absolutePath": "/home/per/Desktop/productmanager/contracts/Ownable.sol",
       "exportedSymbols": {
         "Ownable": [
           72
@@ -998,7 +998,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-05-24T10:15:12.757Z",
+  "updatedAt": "2021-06-05T15:41:09.065Z",
   "devdoc": {
     "methods": {
       "isOwner()": {

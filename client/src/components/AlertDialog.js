@@ -1,11 +1,14 @@
 
 import React from 'react';
+import QRCode from 'react-qr-code'
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
+
+
 
 export default function AlertDialog(props) {
 
@@ -22,6 +25,14 @@ export default function AlertDialog(props) {
                         Please inform customer with following details: <br />
                         Product price (Wei): {props.price} <br />
                         Payment address: {props.paymentAddress} <br />
+                        Item Name: {props.name} <br />
+                        <QRCode
+                        value ={props.name}
+                        size={115}
+                        level={"H"}
+                        includeMargin={true}
+                        />
+
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
