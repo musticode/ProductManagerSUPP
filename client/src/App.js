@@ -191,7 +191,7 @@ class App extends Component {
       }
     })
 
-    // Getting all products from contract
+    // Getting all products from contract c
     await this.getAllProductsFromContract();
   }
 
