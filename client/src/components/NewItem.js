@@ -6,6 +6,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Container from '@material-ui/core/Container';
 import TextField from '@material-ui/core/TextField';
+import AddIcon from '@material-ui/icons/Add';
 
 import AlertDialog from './AlertDialog'
 
@@ -74,6 +75,7 @@ class NewItem extends Component {
                         <Grid item xs={12}>
                             <Button variant="contained" color="secondary" onClick={this.createNewItem}>
                                 Create new product
+                                <AddIcon />
                             </Button>
                         </Grid>
                     </Grid>
