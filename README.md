@@ -1,5 +1,4 @@
-# ProductManagerSUPP
-Ethereum Supply Chain Management
+# Ethereum Supply Chain Management 
 
 Workflow
 
