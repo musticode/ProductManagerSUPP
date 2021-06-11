@@ -15,5 +15,5 @@ Web3.js v1.3.6
 React**
 
 Dependencies:  
-material-ui: npm install @material-ui/core
+material-ui: npm install @material-ui/core  
 react-qr-code: yarn add react-qr-code  
